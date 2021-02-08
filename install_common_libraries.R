@@ -158,6 +158,7 @@ common_packages_installed <- c(
   "mschart",
   "naniar",
   "neo4r",
+  "odbc",
   "officer",
   "packrat",
   "pagedown",
