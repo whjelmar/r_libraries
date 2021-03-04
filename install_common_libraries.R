@@ -265,6 +265,7 @@ common_packages_installed <- c(
   "word2vac",
   "wordcloud",
   "workflows",
+  "XeLaTeX",
   "xlsx",
   "xts",
   "yardstick"
