@@ -9,6 +9,7 @@ common_packages_installed <- c(
   "bbplot",
   "beepr",
   "bench",
+  "bookdown",
   "bslib",
   "cachem",
   "Cairo",
