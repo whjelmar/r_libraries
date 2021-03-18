@@ -14,6 +14,7 @@ common_packages_installed <- c(
   "cachem",
   "Cairo",
   "calendR",
+  "capsule",
   "caret",
   "circlize",
   "circularEV",
@@ -36,6 +37,7 @@ common_packages_installed <- c(
   "DiagrammeR",
   "diffdf",
   "dlookr",
+  "dontenv",
   "dplyr",
   "dplyr.snowflakedb",
   "dygraphs",
@@ -247,6 +249,7 @@ common_packages_installed <- c(
   "systemfonts",
   "tagger",
   "targets",
+  "tarchetypes",
   "tensorflow",
   "testthat",
   "textrecipes",
@@ -310,5 +313,6 @@ remotes::install_github("gaborcsardi/prompt")
 #remotes::install_github("csgillespie/rprofile")
 #remotes::install_github("jalvesaq/colorout")
 devtools::install_github("martinctc/parallaxr")
+devtools::install_github("milesmcbain/tflow")
 
 update.packages(ask=FALSE)
