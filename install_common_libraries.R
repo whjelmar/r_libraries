@@ -37,7 +37,7 @@ common_packages_installed <- c(
   "DiagrammeR",
   "diffdf",
   "dlookr",
-  "dontenv",
+  "dotenv",
   "dplyr",
   "dplyr.snowflakedb",
   "dygraphs",
