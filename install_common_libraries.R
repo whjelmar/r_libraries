@@ -228,6 +228,7 @@ common_packages_installed <- c(
   "rfm",
   "rgl",
   "rmarkdown",
+  "rmdformats",
   "rockthemes",
   "rsvg",
   "rtconnector",
@@ -313,6 +314,7 @@ remotes::install_github("gaborcsardi/prompt")
 #remotes::install_github("csgillespie/rprofile")
 #remotes::install_github("jalvesaq/colorout")
 devtools::install_github("martinctc/parallaxr")
+devtools::install_github("milesmcbain/fnmate")
 devtools::install_github("milesmcbain/tflow")
 
 update.packages(ask=FALSE)
