@@ -202,6 +202,7 @@ common_packages_installed <- c(
   "plyr",
   "preferably",
   "prettydoc",
+  "proffer",
   "profvis",
   "progress",
   "progressR",
