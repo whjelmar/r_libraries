@@ -147,6 +147,7 @@ common_packages_installed <- c(
   "ggwaffle",
   "ggweekly",
   "ggwordcloud",
+  "git2r",
   "glue",
   "glmnet",
   "gplots",
