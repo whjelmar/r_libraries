@@ -159,6 +159,7 @@ common_packages_installed <- c(
   "hrbrthemes",
   "htmlwidgets",
   "html5",
+  "heuristicsmineR",
   "huxtable",
   "igraph",
   "igraphdata",
