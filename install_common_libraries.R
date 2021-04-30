@@ -205,6 +205,7 @@ common_packages_installed <- c(
   "petrinetR",
   "plotly",
   "plyr",
+  "pm4py",
   "preferably",
   "prettydoc",
   "processanimateR",
