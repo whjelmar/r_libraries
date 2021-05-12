@@ -26,6 +26,7 @@ common_packages_installed <- c(
   "corrmorant",
   "cowplot",
   "customLayout",
+  "curl",
   "d3r",
   "DataExplorer",
   "data.table",
@@ -194,6 +195,7 @@ common_packages_installed <- c(
   "node2vec",
   "odbc",
   "officer",
+  "openssl",
   "packrat",
   "pagedown",
   "pagedreport",
@@ -328,5 +330,6 @@ remotes::install_github("gaborcsardi/prompt")
 devtools::install_github("martinctc/parallaxr")
 devtools::install_github("milesmcbain/fnmate")
 devtools::install_github("milesmcbain/tflow")
+devtools::install_github("matbmeijer/JirAgileR")
 
 update.packages(ask=FALSE)
