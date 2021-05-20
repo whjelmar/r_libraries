@@ -1,7 +1,9 @@
-# List of useful packages
+suppressPackageStartupMessages(library(usethis))
+
 common_packages_installed <- c(
   "alluvial",
   "archivist",
+  "argparser",
   "autostsm",
   "available",
   "aweSOM",
@@ -19,6 +21,7 @@ common_packages_installed <- c(
   "caret",
   "circlize",
   "circularEV",
+  "cli",
   "compare",
   "config",
   "configr",
@@ -97,6 +100,7 @@ common_packages_installed <- c(
   "gghalves",
   "gghighlight",
   "ggimage",
+  "ggimg",
   "ggip",
   "ggiraph",
   "ggkeyboard",
@@ -196,6 +200,7 @@ common_packages_installed <- c(
   "odbc",
   "officer",
   "openssl",
+  "opencv",
   "packrat",
   "pagedown",
   "pagedreport",
@@ -282,6 +287,7 @@ common_packages_installed <- c(
   "treemapify",
   "tsfeatures",
   "TTR",
+  "ttt",
   "tvthemes",
   "urbnmapr",
   "urbnthemes",
@@ -314,7 +320,10 @@ new.pkg <- common_packages_installed[!(common_packages_installed %in% installed.
 # install them
 if (length(new.pkg)) {
   install.packages(new.pkg,
- repos = "http://cran.rstudio.com")
+    repos = "http://cran.rstudio.com",
+    dependencies = TRUE,
+    verbose = TRUE,
+  )
 }
 
 
@@ -331,5 +340,9 @@ devtools::install_github("martinctc/parallaxr")
 devtools::install_github("milesmcbain/fnmate")
 devtools::install_github("milesmcbain/tflow")
 devtools::install_github("matbmeijer/JirAgileR")
+devtools::install_github("jtlandis/ggside")
+devtools::install_github("r-link/corrmorant")
+devtools::install_github("jimhester/lookup")
+devtools::install_github("hoehleatsu/socialroulette")
 
 update.packages(ask=FALSE)
