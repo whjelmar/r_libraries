@@ -233,6 +233,7 @@ common_packages_installed <- c(
   "queuecomputer",
   "r2d3",
   "ragg",
+  "radiant".
   "rapidoc",
   "randomForest",
   "RandomForestsGLS",
@@ -350,5 +351,8 @@ devtools::install_github("jtlandis/ggside")
 devtools::install_github("r-link/corrmorant")
 devtools::install_github("jimhester/lookup")
 devtools::install_github("hoehleatsu/socialroulette")
+devtools::install_github("yogevherz/plotme")
+devtools::install_github("arthurwelle/codehover")
+devtools::install_github("krassowski/complex-upset")
 
 update.packages(ask=FALSE)
