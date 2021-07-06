@@ -235,6 +235,7 @@ common_packages_installed <- c(
   "purr",
   "qcc",
   "queuecomputer",
+  "qrencoder",
   "r2d3",
   "ragg",
   "radiant",
@@ -362,5 +363,8 @@ devtools::install_github("hoehleatsu/socialroulette")
 devtools::install_github("yogevherz/plotme")
 devtools::install_github("arthurwelle/codehover")
 devtools::install_github("krassowski/complex-upset")
+devtools::install_github("mrjoh3/ggtrack")
+devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch")
+
 
 update.packages(ask=FALSE)
