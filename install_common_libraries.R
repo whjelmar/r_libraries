@@ -151,6 +151,7 @@ common_packages_installed <- c(
   "ggthreed",
   "ggTimeSeries",
   "ggtree",
+  "ggtrack",
   "ggupset",
   "ggvenn",
   "ggVennDiagram",
