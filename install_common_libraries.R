@@ -212,6 +212,7 @@ common_packages_installed <- c(
   "paletteer",
   "parallelly",
   "parallelPlot",
+  "parsermd",
   "parttree",
   "partykit",
   "patchwork",
@@ -365,6 +366,6 @@ devtools::install_github("arthurwelle/codehover")
 devtools::install_github("krassowski/complex-upset")
 devtools::install_github("mrjoh3/ggtrack")
 devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch")
-
+devtools::install_github("ianmoran11/mmtable2")
 
 update.packages(ask=FALSE)
