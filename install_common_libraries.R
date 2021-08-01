@@ -313,6 +313,7 @@ common_packages_installed <- c(
   "waldo",
   "webshot",
   "webmockr",
+  "wesanderson",
   "whiskers",
   "widyr",
   "word2vac",
