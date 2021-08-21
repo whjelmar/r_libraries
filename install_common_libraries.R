@@ -348,6 +348,7 @@ common_packages_installed <- c(
   "usethis",
   "vcd",
   "vcr",
+  "vdiffr",
   "waffle",
   "waldo",
   "webmockr",
