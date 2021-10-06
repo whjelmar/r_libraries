@@ -309,6 +309,7 @@ common_packages_installed <- c(
   "showtext",
   "sjPlot",
   "skimr",
+  "slackr",
   "SnowballC",
   "soilpalettes",
   "speakr",
