@@ -23,6 +23,7 @@ common_packages_installed <- c(
   "cachem",
   "Cairo",
   "calendR",
+  "camcorder",
   "capsule",
   "caret",
   "circletyper",
@@ -62,6 +63,7 @@ common_packages_installed <- c(
   "esquisse",
   "eventdataR",
   "extrafont",
+  "exactextractr",
   "fable",
   "fable.prophet",
   "facetscales",
@@ -264,6 +266,7 @@ common_packages_installed <- c(
   "randomForest",
   "RandomForestsGLS",
   "rapidoc",
+  "rayshader",
   "RColorBrewer",
   "RCurl",
   "reactor",
@@ -288,6 +291,7 @@ common_packages_installed <- c(
   "rvest",
   "rvg",
   "scales",
+  "sdcMicro",
   "sfthemes",
   "shiny",
   "shinyauthr",
@@ -363,7 +367,8 @@ common_packages_installed <- c(
   "xesreadR",
   "xlsx",
   "xts",
-  "yardstick"
+  "yardstick",
+  "yarrr"
 )
 
 library(devtools)
@@ -408,5 +413,10 @@ devtools::install_github("krassowski/complex-upset")
 devtools::install_github("mrjoh3/ggtrack")
 devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch")
 devtools::install_github("ianmoran11/mmtable2")
-
+devtools::install_github("lchiffon/wordcloud2")
+devtools::install_github("h-a-graham/rayvista", dependencies=TRUE)
+# install.package('remotes')
+remotes::install_github('coolbutuseless/cssparser')
+remotes::install_github('coolbutuseless/svgparser')
+remotes::install_github('coolbutuseless/ggsvg')
 update.packages(ask=FALSE)
