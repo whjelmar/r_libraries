@@ -217,6 +217,7 @@ common_packages_installed <- c(
   "lubridate",
   "magick",
   "magrittr",
+  "makepipe",
   "mailmerge",
   "mdthemes",
   "memoise",
