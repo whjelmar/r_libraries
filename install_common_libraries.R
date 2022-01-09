@@ -59,6 +59,7 @@ common_packages_installed <- c(
   "dotenv",
   "dplyr",
   "dplyr.snowflakedb",
+  "dtw",
   "dygraphs",
   "easyalluvial",
   "edeaR",
@@ -71,6 +72,7 @@ common_packages_installed <- c(
   "fable",
   "fable.prophet",
   "facetscales",
+  "fastmap",
   "feasts",
   "ffsimulator",
   "findInFiles",
@@ -222,6 +224,7 @@ common_packages_installed <- c(
   "mlr",
   "modeldb",
   "modeltime",
+  "modeltime.gluonts",
   "moderndive",
   "mschart",
   "naniar",
@@ -406,32 +409,32 @@ if (length(new.pkg)) {
 
 
 webshot::install_phantomjs()
-devtools::install_github("whjelmar/citihubstyle")
-devtools::install_github("rsquaredacademy/pkginfo")
-devtools::install_github("nicolewhite/RNeo4j")
-devtools::install_github("Tony-Chen-Melbourne/bcggtheme")
-devtools::install_github("Azure/Microsoft365R")
-remotes::install_github("gaborcsardi/prompt")
-#remotes::install_github("csgillespie/rprofile")
-#remotes::install_github("jalvesaq/colorout")
-devtools::install_github("martinctc/parallaxr")
-devtools::install_github("milesmcbain/fnmate")
-devtools::install_github("milesmcbain/tflow")
-devtools::install_github("matbmeijer/JirAgileR")
-devtools::install_github("jtlandis/ggside")
-devtools::install_github("r-link/corrmorant")
-devtools::install_github("jimhester/lookup")
-devtools::install_github("hoehleatsu/socialroulette")
-devtools::install_github("yogevherz/plotme")
-devtools::install_github("arthurwelle/codehover")
-devtools::install_github("krassowski/complex-upset")
-devtools::install_github("mrjoh3/ggtrack")
-devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch")
-devtools::install_github("ianmoran11/mmtable2")
-devtools::install_github("lchiffon/wordcloud2")
-devtools::install_github("h-a-graham/rayvista", dependencies=TRUE)
-# install.package('remotes')
-remotes::install_github('coolbutuseless/cssparser')
-remotes::install_github('coolbutuseless/svgparser')
-remotes::install_github('coolbutuseless/ggsvg')
+devtools::install_github("whjelmar/citihubstyle", dependencies = FALSE, type = "both")
+devtools::install_github("rsquaredacademy/pkginfo", dependencies = FALSE, type = "both")
+devtools::install_github("nicolewhite/RNeo4j", dependencies = FALSE, type = "both")
+devtools::install_github("Tony-Chen-Melbourne/bcggtheme", dependencies = FALSE, type = "both")
+devtools::install_github("Azure/Microsoft365R", dependencies = FALSE, type = "both")
+remotes::install_github("gaborcsardi/prompt", dependencies = FALSE, type = "both")
+#remotes::install_github("csgillespie/rprofile", dependencies = FALSE, type = "both")
+#remotes::install_github("jalvesaq/colorout", dependencies = FALSE, type = "both")
+devtools::install_github("martinctc/parallaxr", dependencies = FALSE, type = "both")
+devtools::install_github("milesmcbain/fnmate", dependencies = FALSE, type = "both")
+devtools::install_github("milesmcbain/tflow", dependencies = FALSE, type = "both")
+devtools::install_github("matbmeijer/JirAgileR", dependencies = FALSE, type = "both")
+devtools::install_github("jtlandis/ggside", dependencies = FALSE, type = "both")
+devtools::install_github("r-link/corrmorant", dependencies = FALSE, type = "both")
+devtools::install_github("jimhester/lookup", dependencies = FALSE, type = "both")
+devtools::install_github("hoehleatsu/socialroulette", dependencies = FALSE, type = "both")
+devtools::install_github("yogevherz/plotme", dependencies = FALSE, type = "both")
+devtools::install_github("arthurwelle/codehover", dependencies = FALSE, type = "both")
+devtools::install_github("krassowski/complex-upset", dependencies = FALSE, type = "both")
+devtools::install_github("mrjoh3/ggtrack", dependencies = FALSE, type = "both")
+devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch", dependencies = FALSE, type = "both")
+devtools::install_github("ianmoran11/mmtable2", dependencies = FALSE, type = "both")
+devtools::install_github("lchiffon/wordcloud2", dependencies = FALSE, type = "both")
+devtools::install_github("h-a-graham/rayvista", dependencies = FALSE, type = "both")
+# install.package('remotes', dependencies = FALSE, type = "both")
+remotes::install_github('coolbutuseless/cssparser', dependencies = FALSE, type = "both")
+remotes::install_github('coolbutuseless/svgparser', dependencies = FALSE, type = "both")
+remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
 update.packages(ask=FALSE)
