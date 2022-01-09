@@ -52,6 +52,7 @@ common_packages_installed <- c(
   "dbplyr",
   "devtools",
   "DiagrammeR",
+  "DiagrammeRsvg",
   "diffdf",
   "diffviewer",
   "diffobj",
@@ -181,6 +182,7 @@ common_packages_installed <- c(
   "glmnet",
   "glue",
   "gplots",
+  "grid",
   "hablar",
   "here",
   "hereR",
@@ -206,6 +208,7 @@ common_packages_installed <- c(
   "knitcitations",
   "knitr",
   "languageserver",
+  "lattice",
   "leaflegend",
   "leaflet",
   "lindia",
@@ -289,6 +292,7 @@ common_packages_installed <- c(
   "renv",
   "reprex",
   "report",
+  "reshape2",
   "revealjs",
   "rfm",
   "rgl",
@@ -299,6 +303,7 @@ common_packages_installed <- c(
   "rockthemes",
   "rsvg",
   "rtconnector",
+  "rticles",
   "Rttf2p1",
   "rtweet",
   "runonce",
@@ -437,4 +442,5 @@ devtools::install_github("h-a-graham/rayvista", dependencies = FALSE, type = "bo
 remotes::install_github('coolbutuseless/cssparser', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/svgparser', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
+remotes::install_github("adamleerich/alrtools", dependencies = FALSE, type = "both")
 update.packages(ask=FALSE)
