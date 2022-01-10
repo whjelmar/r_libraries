@@ -284,6 +284,7 @@ common_packages_installed <- c(
   "rayshader",
   "RColorBrewer",
   "RCurl",
+  "Rd2roxygen",
   "RPostgres",
   "reactor",
   "readr",
