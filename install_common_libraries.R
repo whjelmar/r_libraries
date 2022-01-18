@@ -443,4 +443,6 @@ remotes::install_github('coolbutuseless/cssparser', dependencies = FALSE, type =
 remotes::install_github('coolbutuseless/svgparser', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
 remotes::install_github("adamleerich/alrtools", dependencies = FALSE, type = "both")
+# if needed install.packages("remotes")
+remotes::install_github("jthomasmock/gtExtras", dependencies = FALSE, type = "both")
 update.packages(ask=FALSE)
