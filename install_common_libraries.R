@@ -12,6 +12,7 @@ common_packages_installed <- c(
   "autotest",
   "available",
   "aweSOM",
+  "baseballr",
   "blastula",
   "bayesforecast",
   "bbplot",
@@ -82,6 +83,7 @@ common_packages_installed <- c(
   "feasts",
   "ffsimulator",
   "findInFiles",
+  "fixtuRes",
   "flexdashboard",
   "flextable",
   "fmsb",
@@ -106,6 +108,7 @@ common_packages_installed <- c(
   "ggbillboard",
   "ggblur",
   "ggbump",
+  "ggchangepoint",
   "ggcharts",
   "ggchicklet",
   "ggcor",
@@ -177,6 +180,7 @@ common_packages_installed <- c(
   "ggTimeSeries",
   "ggtrack",
   "ggtree",
+  "ggtrendline",
   "ggupset",
   "ggvenn",
   "ggVennDiagram",
@@ -249,6 +253,7 @@ common_packages_installed <- c(
   "officer",
   "opencv",
   "openssl",
+  "overviewR",
   "packrat",
   "padr",
   "pagedown",
@@ -296,14 +301,17 @@ common_packages_installed <- c(
   "rayrender",
   "rayshader",
   "rayvertex",
+  "rconfig",
   "RColorBrewer",
   "RCurl",
   "Rd2roxygen",
   "RPostgres",
+  "reactablefmtr",
   "reactor",
   "readr",
   "readxl",
   "redoc",
+  "recipies",
   "remotes",
   "renv",
   "reprex",
@@ -362,6 +370,7 @@ common_packages_installed <- c(
   "targets",
   "tensorflow",
   "terrainmeshr",
+  "terrainr",
   "testthat",
   "textdata",
   "textrecipes",
@@ -397,6 +406,7 @@ common_packages_installed <- c(
   "urbnmapr",
   "urbnthemes",
   "usethis",
+  "validate",
   "vcd",
   "vcr",
   "vdiffr",
@@ -413,6 +423,7 @@ common_packages_installed <- c(
   "workflowsets",
   "XeLaTeX",
   "XLConnect",
+  "xgboost",
   "xesreadR",
   "xlsx",
   "xts",
@@ -464,13 +475,24 @@ devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarc
 devtools::install_github("ianmoran11/mmtable2", dependencies = FALSE, type = "both")
 devtools::install_github("lchiffon/wordcloud2", dependencies = FALSE, type = "both")
 devtools::install_github("h-a-graham/rayvista", dependencies = FALSE, type = "both")
+devtools::install_github("cynkra/fledge", dependencies = FALSE, type = "both")
+
 # install.package('remotes', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/cssparser', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/svgparser', dependencies = FALSE, type = "both")
 remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
 remotes::install_github("adamleerich/alrtools", dependencies = FALSE, type = "both")
-# if needed install.packages("remotes")
 remotes::install_github("jthomasmock/gtExtras", dependencies = FALSE, type = "both")
 remotes::install_github("EvaMaeRey/flipbookr", dependencies = FALSE, type = "both")
+remotes::install_github("matt-dray/r.oguelike", dependencies = FALSE, type = "both")
+remotes::install_github("hrbrmstr/ggchicklet", dependencies = FALSE, type = "both")
+remotes::install_github("yjunechoe/ggtrace", dependencies = FALSE, type = "both")
+remotes::install_github("hrbrmstr/pubcheck", dependencies = FALSE, type = "both")
+remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
+remotes::install_github("thebioengineer/camcorder", dependencies = FALSE, type = "both")
+remotes::install_github("mdneuzerling/exemplar", dependencies = FALSE, type = "both")
+
+# if needed install.packages("remotes")
+remotes::install_packages("analythium/rconfig", dependencies = FALSE, type = "both")
 
 update.packages(ask=FALSE)
