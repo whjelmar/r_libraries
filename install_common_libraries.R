@@ -493,6 +493,6 @@ remotes::install_github("thebioengineer/camcorder", dependencies = FALSE, type =
 remotes::install_github("mdneuzerling/exemplar", dependencies = FALSE, type = "both")
 
 # if needed install.packages("remotes")
-remotes::install_packages("analythium/rconfig", dependencies = FALSE, type = "both")
+remotes::install_github("analythium/rconfig", dependencies = FALSE, type = "both")
 
 update.packages(ask=FALSE)
