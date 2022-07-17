@@ -58,6 +58,8 @@ common_packages_installed <- c(
   "DBI",
   "dbplot",
   "dbplyr",
+  "dendextend",
+  "devtoolbox",
   "devtools",
   "DiagrammeR",
   "DiagrammeRsvg",
@@ -65,6 +67,7 @@ common_packages_installed <- c(
   "diffviewer",
   "diffobj",
   "dlookr",
+  "dockerfiler",
   "dotenv",
   "dplyr",
   "dplyr.snowflakedb",
@@ -216,6 +219,7 @@ common_packages_installed <- c(
   "hrbrthemes",
   "html5",
   "htmlwidgets",
+  "htmlTable",
   "httr2",
   "huxtable",
   "igraph",
@@ -226,6 +230,7 @@ common_packages_installed <- c(
   "inspectdf",
   "inspectr",
   "janitor",
+  "jds.rmd",
   "jsonlite",
   "jtools",
   "kableExtra",
@@ -266,6 +271,8 @@ common_packages_installed <- c(
   "neo4r",
   "networkscaleup",
   "networktree",
+  "nflverse",
+  "nflseedR",
   "ngboostForecast",
   "nodbi",
   "node2vec",
@@ -306,10 +313,12 @@ common_packages_installed <- c(
   "ProjectTemplate",
   "prompter",
   "prophet",
+  "processx",
   "purrr",
   "qcc",
   "qrencoder",
   "queuecomputer",
+  "quarto",
   "r2d3",
   "radiant",
   "ragg",
@@ -441,8 +450,10 @@ common_packages_installed <- c(
   "vcd",
   "vcr",
   "vdiffr",
+  "vmr",
   "waffle",
   "waldo",
+  "webdeveloper",
   "webmockr",
   "webshot",
   "webshot2",
@@ -478,54 +489,57 @@ if (length(new.pkg)) {
                    repos = "http://cran.rstudio.com",
                    dependencies = TRUE,
                    verbose = TRUE,
+                   quiet = TRUE
   )
 }
 
 
 webshot::install_phantomjs()
-devtools::install_github("whjelmar/citihubstyle", dependencies = FALSE, type = "both")
-devtools::install_github("rsquaredacademy/pkginfo", dependencies = FALSE, type = "both")
-devtools::install_github("nicolewhite/RNeo4j", dependencies = FALSE, type = "both")
-devtools::install_github("Tony-Chen-Melbourne/bcggtheme", dependencies = FALSE, type = "both")
-devtools::install_github("Azure/Microsoft365R", dependencies = FALSE, type = "both")
-remotes::install_github("gaborcsardi/prompt", dependencies = FALSE, type = "both")
-#remotes::install_github("csgillespie/rprofile", dependencies = FALSE, type = "both")
-#remotes::install_github("jalvesaq/colorout", dependencies = FALSE, type = "both")
-devtools::install_github("martinctc/parallaxr", dependencies = FALSE, type = "both")
-devtools::install_github("milesmcbain/fnmate", dependencies = FALSE, type = "both")
-devtools::install_github("milesmcbain/tflow", dependencies = FALSE, type = "both")
-devtools::install_github("matbmeijer/JirAgileR", dependencies = FALSE, type = "both")
-devtools::install_github("jtlandis/ggside", dependencies = FALSE, type = "both")
-devtools::install_github("r-link/corrmorant", dependencies = FALSE, type = "both")
-devtools::install_github("jimhester/lookup", dependencies = FALSE, type = "both")
-devtools::install_github("hoehleatsu/socialroulette", dependencies = FALSE, type = "both")
-devtools::install_github("yogevherz/plotme", dependencies = FALSE, type = "both")
-devtools::install_github("arthurwelle/codehover", dependencies = FALSE, type = "both")
-devtools::install_github("krassowski/complex-upset", dependencies = FALSE, type = "both")
-devtools::install_github("mrjoh3/ggtrack", dependencies = FALSE, type = "both")
-devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch", dependencies = FALSE, type = "both")
-devtools::install_github("ianmoran11/mmtable2", dependencies = FALSE, type = "both")
-devtools::install_github("lchiffon/wordcloud2", dependencies = FALSE, type = "both")
-devtools::install_github("h-a-graham/rayvista", dependencies = FALSE, type = "both")
-devtools::install_github("cynkra/fledge", dependencies = FALSE, type = "both")
+devtools::install_github("whjelmar/citihubstyle", dependencies = TRUE, type = "both")
+devtools::install_github("rsquaredacademy/pkginfo", dependencies = TRUE, type = "both")
+devtools::install_github("nicolewhite/RNeo4j", dependencies = TRUE, type = "both")
+devtools::install_github("Tony-Chen-Melbourne/bcggtheme", dependencies = TRUE, type = "both")
+devtools::install_github("Azure/Microsoft365R", dependencies = TRUE, type = "both")
+remotes::install_github("gaborcsardi/prompt", dependencies = TRUE, type = "both")
+#remotes::install_github("csgillespie/rprofile", dependencies = TRUE, type = "both")
+#remotes::install_github("jalvesaq/colorout", dependencies = TRUE, type = "both")
+devtools::install_github("martinctc/parallaxr", dependencies = TRUE, type = "both")
+devtools::install_github("milesmcbain/fnmate", dependencies = TRUE, type = "both")
+devtools::install_github("milesmcbain/tflow", dependencies = TRUE, type = "both")
+devtools::install_github("matbmeijer/JirAgileR", dependencies = TRUE, type = "both")
+devtools::install_github("jtlandis/ggside", dependencies = TRUE, type = "both")
+devtools::install_github("r-link/corrmorant", dependencies = TRUE, type = "both")
+devtools::install_github("jimhester/lookup", dependencies = TRUE, type = "both")
+devtools::install_github("hoehleatsu/socialroulette", dependencies = TRUE, type = "both")
+devtools::install_github("yogevherz/plotme", dependencies = TRUE, type = "both")
+devtools::install_github("arthurwelle/codehover", dependencies = TRUE, type = "both")
+devtools::install_github("krassowski/complex-upset", dependencies = TRUE, type = "both")
+devtools::install_github("mrjoh3/ggtrack", dependencies = TRUE, type = "both")
+devtools::install_github("brianwdavis/quadrangle", INSTALL_opts = "--no-multiarch", dependencies = TRUE, type = "both")
+devtools::install_github("ianmoran11/mmtable2", dependencies = TRUE, type = "both")
+devtools::install_github("lchiffon/wordcloud2", dependencies = TRUE, type = "both")
+devtools::install_github("h-a-graham/rayvista", dependencies = TRUE, type = "both")
+devtools::install_github("cynkra/fledge", dependencies = TRUE, type = "both")
+devtools::install_github("terminological/dtrackr", dependencies = TRUE, type = "both")
 
-# install.package('remotes', dependencies = FALSE, type = "both")
-remotes::install_github('coolbutuseless/cssparser', dependencies = FALSE, type = "both")
-remotes::install_github('coolbutuseless/svgparser', dependencies = FALSE, type = "both")
-remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
-remotes::install_github("adamleerich/alrtools", dependencies = FALSE, type = "both")
-remotes::install_github("jthomasmock/gtExtras", dependencies = FALSE, type = "both")
-remotes::install_github("EvaMaeRey/flipbookr", dependencies = FALSE, type = "both")
-remotes::install_github("matt-dray/r.oguelike", dependencies = FALSE, type = "both")
-remotes::install_github("hrbrmstr/ggchicklet", dependencies = FALSE, type = "both")
-remotes::install_github("yjunechoe/ggtrace", dependencies = FALSE, type = "both")
-remotes::install_github("hrbrmstr/pubcheck", dependencies = FALSE, type = "both")
-remotes::install_github('coolbutuseless/ggsvg', dependencies = FALSE, type = "both")
-remotes::install_github("thebioengineer/camcorder", dependencies = FALSE, type = "both")
-remotes::install_github("mdneuzerling/exemplar", dependencies = FALSE, type = "both")
-remotes::install_github("dgkf/ggpackets", dependencies = FALSE, type = "both")
+
+# install.package('remotes', dependencies = TRUE, type = "both")
+remotes::install_github('coolbutuseless/cssparser', dependencies = TRUE, type = "both")
+remotes::install_github('coolbutuseless/svgparser', dependencies = TRUE, type = "both")
+remotes::install_github('coolbutuseless/ggsvg', dependencies = TRUE, type = "both")
+remotes::install_github("adamleerich/alrtools", dependencies = TRUE, type = "both")
+remotes::install_github("jthomasmock/gtExtras", dependencies = TRUE, type = "both")
+remotes::install_github("EvaMaeRey/flipbookr", dependencies = TRUE, type = "both")
+remotes::install_github("matt-dray/r.oguelike", dependencies = TRUE, type = "both")
+remotes::install_github("hrbrmstr/ggchicklet", dependencies = TRUE, type = "both")
+remotes::install_github("yjunechoe/ggtrace", dependencies = TRUE, type = "both")
+remotes::install_github("hrbrmstr/pubcheck", dependencies = TRUE, type = "both")
+remotes::install_github('coolbutuseless/ggsvg', dependencies = TRUE, type = "both")
+remotes::install_github("thebioengineer/camcorder", dependencies = TRUE, type = "both")
+remotes::install_github("mdneuzerling/exemplar", dependencies = TRUE, type = "both")
+remotes::install_github("dgkf/ggpackets", dependencies = TRUE, type = "both")
 # install.packages("remotes")
-remotes::install_github("jthomasmock/gistillery", dependencies = FALSE, type = "both")
-remotes::install_github("analythium/rconfig", dependencies = FALSE, type = "both")
+remotes::install_github("jthomasmock/gistillery", dependencies = TRUE, type = "both")
+remotes::install_github("analythium/rconfig", dependencies = TRUE, type = "both")
 
 update.packages(ask=FALSE)
