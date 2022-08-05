@@ -8,6 +8,7 @@ common_packages_installed <- c(
   "archivist",
   "argparser",
   "arulesViz",
+  "audio",
   "autostsm",
   "autotest",
   "available",
@@ -163,6 +164,7 @@ common_packages_installed <- c(
   "ggmosaic",
   "ggmulti",
   "ggnewscale",
+  "ggpackets",
   "ggpage",
   "ggparliament",
   "ggparty",
@@ -284,9 +286,11 @@ common_packages_installed <- c(
   "node2vec",
   "nplyr",
   "odbc",
+  "offensiveR",
   "officer",
   "opencv",
   "openssl",
+  "ofr",
   "overviewR",
   "packrat",
   "padr",
@@ -534,7 +538,7 @@ devtools::install_github("lchiffon/wordcloud2", dependencies = TRUE, type = "bot
 devtools::install_github("h-a-graham/rayvista", dependencies = TRUE, type = "both")
 devtools::install_github("cynkra/fledge", dependencies = TRUE, type = "both")
 devtools::install_github("terminological/dtrackr", dependencies = TRUE, type = "both")
-
+devtools::install_github("shichenxie/scorecard", dependencies = TRUE, type = "both")
 
 # install.package('remotes', dependencies = TRUE, type = "both")
 remotes::install_github('coolbutuseless/cssparser', dependencies = TRUE, type = "both")
@@ -555,5 +559,7 @@ remotes::install_github("dgkf/ggpackets", dependencies = TRUE, type = "both")
 remotes::install_github("jthomasmock/gistillery", dependencies = TRUE, type = "both")
 remotes::install_github("analythium/rconfig", dependencies = TRUE, type = "both")
 remotes::install_github("cynkra/constructive", dependencies = TRUE, type = "both")
+remotes::install_github("coolbutuseless/eventloop", dependencies = TRUE, type = "both")
+remotes::install_github("coolbutuseless/nara", dependencies = TRUE, type = "both")
 
 update.packages(ask=FALSE)
