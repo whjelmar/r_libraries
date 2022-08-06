@@ -539,6 +539,7 @@ devtools::install_github("h-a-graham/rayvista", dependencies = TRUE, type = "bot
 devtools::install_github("cynkra/fledge", dependencies = TRUE, type = "both")
 devtools::install_github("terminological/dtrackr", dependencies = TRUE, type = "both")
 devtools::install_github("shichenxie/scorecard", dependencies = TRUE, type = "both")
+devtools::install_github("https://github.com/petergandenberger/gridstackeR", dependencies = TRUE, type = "both")
 
 # install.package('remotes', dependencies = TRUE, type = "both")
 remotes::install_github('coolbutuseless/cssparser', dependencies = TRUE, type = "both")
