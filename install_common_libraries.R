@@ -49,6 +49,7 @@ common_packages_installed <- c(
   "cowplot",
   "crossvalidation",
   "cssparser",
+  "ctv",
   "curl",
   "customLayout",
   "d3r",
@@ -256,6 +257,7 @@ common_packages_installed <- c(
   "listr",
   "logr",
   "lubridate",
+  "luz",
   "magick",
   "magrittr",
   "makepipe",
@@ -444,6 +446,7 @@ common_packages_installed <- c(
   "tinytest",
   "tm",
   "todor",
+  "torch",
   "torchaudio",
   "treemapify",
   "tsfeatures",
@@ -493,6 +496,7 @@ common_packages_installed <- c(
 
 library(devtools)
 library(webshot)
+library(ctv)
 
 # Check if packages are not installed and assign the
 # names of the uninstalled packages to the variable new.pkg
@@ -509,6 +513,33 @@ if (length(new.pkg)) {
                    quiet = TRUE
   )
 }
+
+common_task_groups <- c(
+  "Bayesian",
+  "CasualInterference",
+  "Cluster",
+  "Databases",
+  "ExtremeValue",
+  "Finance",
+  "FunctionalData",
+  "MachineLearning",
+  "MetaAnalysis",
+  "MissingData",
+  "ModelDevelopment",
+  "NaturalLanguageProcessing",
+  "ReproducibleResearch",
+  "SportsAnalytics",
+  "TimeSeries",
+  "Tracking",
+  "WebTechnologies"
+)
+
+ctv::install.views(common_task_groups,
+                   repos = "http://cran.rstudio.com",
+                   dependencies = TRUE,
+                   verbose = TRUE,
+                   quiet = TRUE
+)
 
 
 webshot::install_phantomjs()
