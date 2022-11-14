@@ -460,6 +460,7 @@ common_packages_installed <- c(
   "tune",
   "tvthemes",
   "unglue",
+  "unheadr",
   "UpSetVP",
   "urbnmapr",
   "urbnthemes",
