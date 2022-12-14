@@ -399,6 +399,7 @@ common_packages_installed <- c(
   "rtweet",
   "runonce",
   "rvest",
+  "RVerbalExpressions",
   "rvg",
   "Rwclust",
   "saas",
