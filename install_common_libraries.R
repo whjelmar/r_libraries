@@ -458,6 +458,7 @@ common_packages_installed <- c(
   "tickle",
   "tictokadsR",
   "tidybayes",
+  "tidycluster",
   "tidyfit",
   "tidylog",
   "tidymodels",
