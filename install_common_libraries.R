@@ -2,7 +2,7 @@ suppressPackageStartupMessages(library(usethis))
 suppressPackageStartupMessages(library(remotes))
 suppressPackageStartupMessages(library(devtools))
 
-update.packages(ask=FALSE)
+#update.packages(ask=FALSE)
 
 # sort(common_packages_installed) %>% unique() %>% as.data.frame() %>% write_csv("packages.csv", quote = "all", eol = ",\n", col_names = FALSE)
 # file.edit("packages.csv")
@@ -229,6 +229,7 @@ common_packages_installed <- c(
   "ggwaffle",
   "ggweekly",
   "ggwordcloud",
+  "gifski",
   "giscoR",
   "git2r",
   "git4r",
