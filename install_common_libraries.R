@@ -224,6 +224,7 @@ common_packages_installed <- c(
   "ggTimeSeries",
   "ggtrack",
   "ggtree",
+  "ggtricks",
   "ggtrendline",
   "ggupset",
   "ggvenn",
