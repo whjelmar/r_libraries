@@ -411,6 +411,7 @@ common_packages_installed <- c(
   "revealjs",
   "rfm",
   "rgl",
+  "rhino",
   "RInno",
   "Rinterface",
   "riskmetric",
