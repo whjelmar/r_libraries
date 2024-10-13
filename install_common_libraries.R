@@ -478,6 +478,7 @@ common_packages_installed <- c(
   "stringr",
   "styler",
   "sugarbag",
+  "summarytools",
   "survminer",
   "svglite",
   "sysfonts",
